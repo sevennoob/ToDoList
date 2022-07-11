@@ -23,7 +23,7 @@ app.get("/", function(req, res){
 
   // res.sendFile(__dirname + "/index.html");
 
-  res.render("index", {title: date.getDate(), items: items});
+  res.render("index", {title: date.getDay(), items: items});
 });
 
 app.get("/work", function(req, res){
